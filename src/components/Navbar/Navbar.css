@@ -1,0 +1,8 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
+.text-xs{
+  font-size: 10px;
+}

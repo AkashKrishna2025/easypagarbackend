@@ -1,0 +1,56 @@
+.loan-card {
+  border-radius: 3rem;
+  padding: 16px;
+  width: 90%;
+  margin: 0 auto
+}
+
+.loan-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+
+.features-section {
+  flex: 1
+}
+
+.feature-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px
+}
+
+.feature-icon {
+  width: 40%;
+  font-size: 20px;
+  margin: auto
+}
+
+.feature-content h3 {
+  margin: 0;
+  font-weight: 700
+}
+
+.feature-content p {
+  margin: 15px 0 0
+}
+
+.image-section {
+  flex: 1;
+  display: flex;
+  justify-content: center
+}
+
+.image-section img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px
+}
+
+@media screen and (max-width:520px) {
+  .loan-container {
+    display: flex;
+    flex-direction: column
+  }
+}

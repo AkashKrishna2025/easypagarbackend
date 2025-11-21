@@ -1,0 +1,79 @@
+.testimonial-container {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px;
+    /* gap: 20px; */
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.left-box {
+    flex: 1;
+    max-width: 60%;  /* Left box will take 40% of the container width */
+    background-color: #f9f9f9;
+    padding: 20px;
+  
+    background-color: #eaf6ff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.right-box {
+    flex: 1;
+    max-width: 50%;  /* Right box will take 55% of the container width */
+    /* padding: 20px; */
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    background-color: #fff;
+}
+
+.right-box video {
+    border-radius: 10px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.custom-dots-container {
+    margin-top: 10px;
+}
+
+.custom-dots-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.custom-dots-container li {
+    margin: 0 5px; /* Add some spacing between dots */
+}
+
+.dot {
+    width: 12px; /* Dot width */
+    height: 12px; /* Dot height */
+    border-radius: 50%; /* Make it a circle */
+    background-color: #ccc; /* Default dot color */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.dot:hover {
+    background-color: #aaa; /* Change color on hover */
+}
+
+.dot.active {
+    background-color: #000; /* Active dot color */
+}
+@media screen and (max-width:520px) {
+    .testimonial-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .right-box{
+        max-width: 100%;
+    }
+    .left-box{
+        max-width: 100%;
+    }
+}

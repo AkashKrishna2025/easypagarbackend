@@ -1,0 +1,4 @@
+.text-stroke {
+  -webkit-text-stroke: 1px rgb(255, 255, 255); /* Adjust the stroke width and color */
+  color: white; /* Set the text color */
+}

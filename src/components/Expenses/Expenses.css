@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  width: 400px; /* Adjust according to your mobile image size */
+  height: 600px; /* Adjust according to your mobile image size */
+  margin: auto;
+}
+
+.mobile-imageexp {
+  /* position: absolute; */
+  z-index: 1; /* Make sure the image is above the feature boxes */
+  width: 100%; /* Adjust as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.featureexp {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: background color for features */
+  padding: 10px;
+  width: 280px; /* Adjust width as needed */
+  text-align: center;
+  z-index: 2;
+  height: 150px;
+}
+
+.top-left {
+  top: 10%;
+  left: 10%;
+}
+
+.top-right {
+  top: 10%;
+  right: 10%;
+}
+
+.bottom-left {
+  bottom: 10%;
+  left: 10%;
+}
+
+.bottom-right {
+  bottom: 10%;
+  right: 10%;
+}
+@media (max-width: 480px) {
+  .mobile-imageexp{
+    padding: 120px;
+  }
+  .featureexp {
+    width: 100%; /* Use more width on small screens */
+    max-width: none;
+     /* Remove max-width for better fit */
+  }
+
+  
+  .top-left, .top-right, .bottom-left, .bottom-right {
+    font-size: 14px; /* Smaller text on mobile */
+    padding: 8px; /* Less padding on mobile */
+  }
+  
+.top-left {
+  top: 10%;
+  left: 5%;
+  width: 30%;
+}
+
+.top-right {
+  top: 10%;
+  right: 5%;
+  width: 30%;
+}
+
+.bottom-left {
+  bottom: 10%;
+  left:  5%;
+  width: 30%;
+}
+
+.bottom-right {
+  bottom: 10%;
+  right:  5%;
+  width: 30%;
+}
+}
