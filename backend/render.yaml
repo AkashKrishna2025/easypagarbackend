@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: easypagar-backend
+    env: node
+    plan: free
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars: []
+
+# Note:
+# - Do NOT include secrets directly in this file for public repos.
+# - After creating the service on Render, set these environment variables in the Render dashboard:
+#   - MONGODB_URI = your MongoDB connection string
+#   - JWT_SECRET = your JWT secret
+#   - NODE_ENV = production
+# - You can also remove 'branch: main' or change it to the branch you will deploy from (e.g., render-setup).
